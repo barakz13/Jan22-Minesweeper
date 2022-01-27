@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(185, 248, 227);
+    text-align: center;
+    font-size: larger;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: rgb(24, 128, 122);
+    position: absolute;
+    left: 285px;
+    top: 10cm;
+}
+
+.smiley {
+    position: absolute;
+    left: 255px;
+    bottom: 8cm;
+    font-size: 3cm
+}
+
+table {
+    border-color: rgb(14, 90, 86);
+    margin: auto;
+    margin-top: 50px;
+}
+
+.board td {
+    width: 55px;
+    height: 55px;
+    font-size: 130%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.timer {
+    background-color: lightseagreen;
+    display: block;
+    position: absolute;
+    top: 85px;
+    padding: 20px;
+    height: 30px;
+    width: 250px;
+    left: 189px;
+    border: solid;
+    text-align: center;
+    font-size: x-large;
+}
+
+.again {
+    display: none;
+    width: 100px;
+    top: 200px;
+    left: 285px;
+    position: absolute;
+}
+
+.beginner {
+    display: block;
+    width: 80px;
+    height: 30px;
+    top: 275px;
+    left: 194px;
+    position: absolute;
+    font-size: medium;
+}
+
+.medium {
+    display: block;
+    width: 80px;
+    height: 30px;
+    top: 275px;
+    left: 298px;
+    position: absolute;
+    font-size: medium;
+}
+
+.expert {
+    display: block;
+    width: 75px;
+    height: 30px;
+    top: 275px;
+    left: 401px;
+    position: absolute;
+    font-size: medium;
+}
+
+h3 {
+    font-size: small;
+    position: absolute;
+    left: 294px;
+    top: 20cm;
+}
