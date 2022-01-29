@@ -11,24 +11,36 @@
 
 <body oncontextmenu="return false;">
     <h1>Minesweeper</h1>
-    <h2></h2>
     <h3>©Barak Levav</h3>
+    <h2></h2>
+    <div class="gameprops">
+        <div class="hints">
+            <h4 onclick="hintClicked(this)">💡</h4>
+            <h5 onclick="hintClicked(this)">💡</h5>
+            <h6 onclick="hintClicked(this)">💡</h6>
+        </div>
+        <div>
+            <div class="h7" onclick="eyeClicked(this)">👁</div>
+            <div class="h8" onclick="eyeClicked(this)">👁</div>
+            <div class="h9" onclick="eyeClicked(this)">👁</div>
+        </div>
+    </div>
     <table border='2px' cellpadding="1">
         <tbody class="board">
-
         </tbody>
     </table>
-    <div class="smiley" onclick="smileyRestart()">😃</div>
+    <div class="smiley" onclick="restartGame()">😃</div>
     <div class="timer"></div>
-    <button class="again" onclick="showButtons()">Again?</button>
-    <button class="beginner" onclick="getSize(this)">Beginner</button>
-    <button class="medium" onclick="getSize(this)">Medium</button>
-    <button class="expert" onclick="getSize(this)">Expert</button>
-
-
-
+    <button class="again" onclick="restartGame()">Again?</button>
+    <div class="levels">
+        <button class="beginner" onclick="getSize(this)">Beginner</button>
+        <button class="medium" onclick="getSize(this)">Medium</button>
+        <button class="expert" onclick="getSize(this)">Expert</button>
+    </div>
+    <button class="undo" onclick="undoAction()">Undo</button>
+    <button class="manually" onclick="manPosMines()">Manullay Positioned Mines</button>
+    <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-

@@ -9,23 +9,27 @@ h1 {
 }
 
 h2 {
-    color: rgb(24, 128, 122);
+    color: rgb(167, 70, 70);
     position: absolute;
     left: 285px;
-    top: 10cm;
+    top: 12cm;
 }
 
 .smiley {
+    cursor: pointer;
     position: absolute;
-    left: 255px;
-    bottom: 8cm;
+    left: 256px;
+    bottom: 240px;
     font-size: 3cm
 }
 
 table {
-    border-color: rgb(14, 90, 86);
+    display: none;
+    cursor: pointer;
+    color: brown;
+    border-color: brown;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .board td {
@@ -33,64 +37,176 @@ table {
     height: 55px;
     font-size: 130%;
     text-align: center;
-    transition: 0.5s;
 }
 
 .timer {
-    background-color: lightseagreen;
+    color: brown;
+    background-color: rgb(60, 218, 210);
     display: block;
     position: absolute;
-    top: 85px;
+    top: 55px;
     padding: 20px;
     height: 30px;
-    width: 250px;
-    left: 189px;
+    width: 255px;
+    left: 187px;
     border: solid;
     text-align: center;
     font-size: x-large;
 }
 
 .again {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
     display: none;
+    height: 27px;
     width: 100px;
-    top: 200px;
+    top: 240px;
     left: 285px;
     position: absolute;
 }
 
 .beginner {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
     display: block;
     width: 80px;
     height: 30px;
-    top: 275px;
+    top: 175px;
     left: 194px;
     position: absolute;
     font-size: medium;
 }
 
 .medium {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
     display: block;
     width: 80px;
     height: 30px;
-    top: 275px;
+    top: 175px;
     left: 298px;
     position: absolute;
     font-size: medium;
 }
 
 .expert {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
     display: block;
     width: 75px;
     height: 30px;
-    top: 275px;
+    top: 175px;
     left: 401px;
     position: absolute;
     font-size: medium;
 }
 
 h3 {
+    color: brown;
     font-size: small;
     position: absolute;
-    left: 294px;
-    top: 20cm;
+    left: 54px;
+    top: 23cm;
 }
+
+h4 {
+    position: absolute;
+    left: 255px;
+    top: 328px;
+    font-size: 45px;
+}
+
+h5 {
+    position: absolute;
+    left: 311px;
+    top: 313px;
+    font-size: 45px;
+}
+
+h6 {
+    position: absolute;
+    left: 365px;
+    top: 284px;
+    font-size: 45px;
+}
+
+
+.h7 {
+    position: absolute;
+    top: 288px;
+    font-size: 75px;
+}
+
+.h8 {
+    position: absolute;
+    top: 288px;
+    font-size: 75px;
+}
+
+.h9 {
+    position: absolute;
+    top: 288px;
+    font-size: 75px;
+}
+
+.clicked {
+    color: rgb(123, 224, 219);
+}
+
+.mark {
+    background-color: rgb(60, 218, 210);
+}
+
+.gameprops {
+    display: none;
+    color: rgb(167, 70, 70);
+}
+
+.undo {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    display: none;
+    width: 75px;
+    height: 30px;
+    top: 765px;
+    left: 396px;
+    position: absolute;
+    font-size: medium;
+}
+
+.manually {
+    cursor: pointer;
+    background-color: rgb(60, 218, 210);
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    display: none;
+    width: 175px;
+    height: 50px;
+    top: 755px;
+    left: 202px;
+    position: absolute;
+    font-size: medium;
+}
+
