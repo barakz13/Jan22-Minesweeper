@@ -1,212 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(185, 248, 227);
-    text-align: center;
-    font-size: larger;
+  background-color: rgb(185, 248, 227);
+  text-align: center;
+  font-size: larger;
+  margin: 0;
+  height: 97vh;
 }
 
 h1 {
-    color: brown;
+  color: brown;
+}
+
+.game-section {
+  display: flex;
+  height: 89vh;
+}
+
+.settings-section {
+  flex: 0.3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 80%;
 }
 
 h2 {
-    color: rgb(167, 70, 70);
-    position: absolute;
-    left: 285px;
-    top: 12cm;
+  color: rgb(167, 70, 70);
 }
 
 .smiley {
-    cursor: pointer;
-    position: absolute;
-    left: 256px;
-    bottom: 240px;
-    font-size: 3cm
+  cursor: pointer;
+  font-size: 3cm;
+}
+
+.table-section {
+  flex: 0.7;
+  margin-top: 20px;
 }
 
 table {
-    display: none;
-    cursor: pointer;
-    color: brown;
-    border-color: brown;
-    margin: auto;
-    margin-top: 30px;
+  display: none;
+  color: brown;
+  border-color: brown;
+  margin-right: 330px;
 }
 
 .board td {
-    width: 55px;
-    height: 55px;
-    font-size: 130%;
-    text-align: center;
+  width: 55px;
+  height: 55px;
+  font-size: 130%;
+  text-align: center;
 }
 
 .timer {
-    color: brown;
-    background-color: rgb(60, 218, 210);
-    display: block;
-    position: absolute;
-    top: 55px;
-    padding: 20px;
-    height: 30px;
-    width: 255px;
-    left: 187px;
-    border: solid;
-    text-align: center;
-    font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: brown;
+  background-color: rgb(60, 218, 210);
+  padding: 20px;
+  height: 30px;
+  width: 255px;
+  border: solid;
+  text-align: center;
+  font-size: 22px;
 }
 
 .again {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: none;
-    height: 27px;
-    width: 100px;
-    top: 240px;
-    left: 285px;
-    position: absolute;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  visibility: hidden;
+  height: 27px;
+  width: 100px;
+}
+
+.levels {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
 }
 
 .beginner {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: block;
-    width: 80px;
-    height: 30px;
-    top: 175px;
-    left: 194px;
-    position: absolute;
-    font-size: medium;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: medium;
 }
 
 .medium {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: block;
-    width: 80px;
-    height: 30px;
-    top: 175px;
-    left: 298px;
-    position: absolute;
-    font-size: medium;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  display: block;
+  width: 80px;
+  height: 30px;
+  font-size: medium;
 }
 
 .expert {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: block;
-    width: 75px;
-    height: 30px;
-    top: 175px;
-    left: 401px;
-    position: absolute;
-    font-size: medium;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  display: block;
+  width: 75px;
+  height: 30px;
+  font-size: medium;
 }
 
 h3 {
-    color: brown;
-    font-size: small;
-    position: absolute;
-    left: 54px;
-    top: 23cm;
+  color: brown;
+  font-size: small;
+  position: absolute;
+  left: 54px;
+  top: 23cm;
+}
+
+.hints {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 h4 {
-    position: absolute;
-    left: 255px;
-    top: 328px;
-    font-size: 45px;
+  font-size: 45px;
+  margin: 0;
 }
 
 h5 {
-    position: absolute;
-    left: 311px;
-    top: 313px;
-    font-size: 45px;
+  font-size: 45px;
+  margin: 0;
 }
 
 h6 {
-    position: absolute;
-    left: 365px;
-    top: 284px;
-    font-size: 45px;
+  font-size: 45px;
+  margin: 0;
 }
 
+.eyes {
+  display: flex;
+}
 
 .h7 {
-    position: absolute;
-    top: 288px;
-    font-size: 75px;
+  font-size: 75px;
 }
 
 .h8 {
-    position: absolute;
-    top: 288px;
-    font-size: 75px;
+  font-size: 75px;
 }
 
 .h9 {
-    position: absolute;
-    top: 288px;
-    font-size: 75px;
+  font-size: 75px;
 }
 
 .clicked {
-    color: rgb(123, 224, 219);
+  color: rgb(123, 224, 219);
 }
 
 .mark {
-    background-color: rgb(60, 218, 210);
+  background-color: rgb(60, 218, 210);
 }
 
 .gameprops {
-    display: none;
-    color: rgb(167, 70, 70);
+  display: none;
+  flex-direction: column;
+  color: rgb(167, 70, 70);
+}
+
+.undo-manually {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-evenly;
 }
 
 .undo {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: none;
-    width: 75px;
-    height: 30px;
-    top: 765px;
-    left: 396px;
-    position: absolute;
-    font-size: medium;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  width: 75px;
+  height: 30px;
+  font-size: medium;
+  display: none;
 }
 
 .manually {
-    cursor: pointer;
-    background-color: rgb(60, 218, 210);
-    color: brown;
-    border-radius: 10px;
-    border: solid;
-    border-width: 2px;
-    display: none;
-    width: 175px;
-    height: 50px;
-    top: 755px;
-    left: 202px;
-    position: absolute;
-    font-size: medium;
+  cursor: pointer;
+  background-color: rgb(60, 218, 210);
+  color: brown;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  display: none;
+  width: 175px;
+  height: 50px;
+  font-size: medium;
 }
 
+@media (max-width: 1530px) {
+  table {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1145px) {
+  .settings-section {
+    margin-left: 20px;
+  }
+
+  .board td {
+    height: 45px;
+    width: 45px;
+  }
+
+  .levels {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .settings-section {
+    margin-left: 50px;
+  }
+  .board td {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 810px) {
+  .board td {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .game-section {
+    flex-direction: column;
+  }
+
+  .settings-section {
+    margin-left: 0;
+  }
+
+  .gameprops {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .smiley {
+    font-size: 2cm;
+  }
+
+  .levels {
+    margin-top: 20px;
+  }
+
+  .lives-smiley {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
