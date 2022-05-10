@@ -161,6 +161,10 @@ h6 {
   display: flex;
 }
 
+.eye {
+  visibility: hidden;
+}
+
 .h7 {
   font-size: 75px;
 }
@@ -288,5 +292,9 @@ h6 {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
+  }
+
+  h3 {
+    top: 22.5cm;
   }
 }

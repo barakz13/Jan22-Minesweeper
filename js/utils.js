@@ -2,8 +2,12 @@
 
 function initGameVisuals() {
   var elHints = document.querySelectorAll('.hint');
+  var elEyes = document.querySelectorAll('.eye');
   for (var i = 0; i < elHints.length; i++) {
     elHints[i].style.visibility = 'visible';
+  }
+  for (var i = 0; i < elEyes.length; i++) {
+    elEyes[i].style.visibility = 'visible';
   }
   var elManually = document.querySelector('.manually');
   elManually.style.display = 'block';
