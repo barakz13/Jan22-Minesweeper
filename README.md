@@ -16,5 +16,7 @@ Vanilla JS, CSS, HTML
 
 Hope you'd like it!
 
+<a href="https://barakz13.github.io/minesweeper/" target="blank">Link to GitHub Pages</a>
+
 ![My Image](msfull.png)
 ![My Image](msmobile.jpeg)
