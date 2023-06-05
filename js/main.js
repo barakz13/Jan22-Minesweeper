@@ -483,7 +483,6 @@ function eyeClicked(elEye) {
   gUsedCellsForEye.push(chosenCell);
   var elCell = document.querySelector(`#cell-${chosenCell.i}-${chosenCell.j}`);
   elCell.classList.add('mark');
-  //   elEye.classList.add('clicked');
   elEye.style.visibility = 'hidden';
   setTimeout(function () {
     revertCellColor(chosenCell.i, chosenCell.j);

@@ -92,7 +92,7 @@ function restartGame() {
   var elBoard = document.querySelector('.board');
   elBoard.innerHTML = '';
   var elAgain = document.querySelector('.again');
-  elAgain.style.display = 'none';
+  elAgain.style.visibility = 'hidden';
   var elManually = document.querySelector('.manually');
   elManually.style.display = 'none';
   var elLevels = document.querySelector('.levels');
@@ -177,8 +177,9 @@ function startTimer() {
 
 function showTimer() {
   gGameTime = (Date.now() - gTimerStart) / 1000;
+  var roundedTime = Math.round(gGameTime * 10) / 10;
   var elTimer = document.querySelector('.timer');
-  elTimer.innerText = `Time: ${gGameTime} seconds`;
+  elTimer.innerText = `Time: ${roundedTime} seconds`;
 }
 
 function getRandomIntInclusive(min, max) {
