@@ -18,11 +18,11 @@ function initGameVisuals() {
   elSmiley.innerText = '😃';
   var elLives = document.querySelector('h2');
   elLives.style.display = 'block';
-  elLives.innerHTML = `Lives: <span>${gLives}</span>`;
-  var elTimer = document.querySelector('.timer');
+  elLives.innerHTML = `Lives: <span class="lives-span">${gLives}</span>`;
+  var elTimer = document.querySelector('.timer-span');
   elTimer.innerText = '';
   if (gLives === 0) {
-    var elLivesSpan = document.querySelector('span');
+    var elLivesSpan = document.querySelector('.lives-span');
     elLivesSpan.style.color = 'rgb(95, 207, 202)';
   }
 }
@@ -87,7 +87,7 @@ function restartGame() {
   elUndo.style.display = 'none';
   var elSmiley = document.querySelector('.smiley');
   elSmiley.innerText = '😃';
-  var elTimer = document.querySelector('.timer');
+  var elTimer = document.querySelector('.timer-span');
   elTimer.innerText = '';
   var elBoard = document.querySelector('.board');
   elBoard.innerHTML = '';
@@ -178,8 +178,8 @@ function startTimer() {
 function showTimer() {
   gGameTime = (Date.now() - gTimerStart) / 1000;
   var roundedTime = Math.round(gGameTime * 10) / 10;
-  var elTimer = document.querySelector('.timer');
-  elTimer.innerText = `Time: ${roundedTime} seconds`;
+  var elTimer = document.querySelector('.timer-span');
+  elTimer.innerText = `${roundedTime.toFixed(1)} seconds`;
 }
 
 function getRandomIntInclusive(min, max) {
@@ -197,7 +197,7 @@ function getRandomColor() {
 
 function livesNumColorChange() {
   if (gLives != 0) {
-    var elLivesSpan = document.querySelector('span');
+    var elLivesSpan = document.querySelector('.lives-span');
     elLivesSpan.style.color = 'rgb(167, 70, 70)';
   }
 }
